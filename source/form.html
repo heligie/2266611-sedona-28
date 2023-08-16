@@ -167,8 +167,7 @@
             <fieldset class="feedback__fieldset">
               <legend class="feedback__legend">Опишите свои эмоции:</legend>
               <label class="feedback__contact">
-                <span class="visually-hidden">Ваш комментарий</span>
-                <textarea class="feedback__contact-input feedback__contact-input--textarea" name="comment" placeholder="Опишите подробно все свои восторги" spellcheck="true"></textarea>
+                <textarea class="feedback__contact-input feedback__contact-input--textarea" name="comment" placeholder="Опишите подробно все свои восторги" aria-label="Ваш комментарий." spellcheck="true"></textarea>
               </label>
             </fieldset>
             <div class="feedback__button-wrapper">
@@ -182,19 +181,13 @@
         <span class="page-footer__hashtag">#VisitSedona</span>
         <ul class="page-footer__list social">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" rel="nofollow noopener">
-              <span class="visually-hidden">Вконтакте.</span>
-            </a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Вконтакте." target="_blank" rel="nofollow noopener"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="nofollow noopener">
-              <span class="visually-hidden">Телеграм.</span>
-            </a>
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Телеграм." target="_blank" rel="nofollow noopener"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="nofollow noopener">
-              <span class="visually-hidden">Youtube.</span>
-            </a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Youtube." target="_blank" rel="nofollow noopener"></a>
           </li>
         </ul>
         <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
@@ -205,21 +198,31 @@
           <span class="visually-hidden">HTML Academy.</span>
         </a>
       </footer>
-      <!-- Чтобы открыть модальное окно, нужно добавить класс is-open -->
+      <!-- Чтобы открыть модальное окно, нужно добавить класс is-active -->
+      <!-- Модальное окно: ошибка -->
       <div class="modal">
-        <div class="modal__wrapper modal__wrapper--error">
-          <h2 class="modal__title">Что-то пошло не так!</h2>
-          <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="modal__button button" type="button">Oк</button>
+        <div class="modal__wrapper">
+          <div class="modal__overlay"></div>
+          <div class="modal__content modal__content--error">
+            <h2 class="modal__title">Что-то пошло не так!</h2>
+            <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="modal__button button" type="button">Oк</button>
+          </div>
         </div>
       </div>
+      <!-- Модальное окно: уведомление -->
       <div class="modal">
-        <div class="modal__wrapper modal__wrapper--success">
-          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-          <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте</p>
-        </div>
-        <div class="modal__wrapper-button">
-          <button class="modal__button button" type="button">Закрыть окно</button>
+        <div class="modal__wrapper">
+          <div class="modal__overlay"></div>
+          <div class="modal__content modal__content--success">
+            <div class="modal__wrapper-text">
+              <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+              <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте</p>
+            </div>
+            <div class="modal__wrapper-button">
+              <button class="modal__button button" type="button">Закрыть окно</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

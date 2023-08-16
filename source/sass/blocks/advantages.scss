@@ -20,6 +20,7 @@
       margin-bottom: 29px;
 
       font-size: 21px;
+      line-height: 26px;
     }
   }
 
@@ -90,10 +91,6 @@
     &--columns {
       grid-template-columns: 2fr 1fr;
     }
-
-    picture {
-      position: relative;
-    }
   }
 }
 
@@ -120,6 +117,10 @@
       }
     }
   }
+}
+
+.advantages__wrapper {
+  position: relative;
 }
 
 .advantages__image {
