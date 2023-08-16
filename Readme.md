@@ -5,7 +5,7 @@
 
 ## О проекте
 
-<img width="769" alt="Devices Mockup." src="sedona-preview.png">
+<img width="769" alt="Devices Mockup." src="/source/sedona-preview.png">
 
 Браузерная поддержка - Google Chrome, Mozilla Firefox, Safari
 
